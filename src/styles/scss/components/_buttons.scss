@@ -1,0 +1,12 @@
+.btn-bd-primary {
+    background-color: $softRed;
+    padding: .5rem 2rem;
+    border: 1px solid $softRed;
+    border-radius: .5rem;
+    color: $white;
+    transition: all .3s;
+    &:hover {
+        background-color: $white;
+        color: $softRed;
+    }
+}
