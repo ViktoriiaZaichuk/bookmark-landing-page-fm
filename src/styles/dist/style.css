@@ -11926,4 +11926,22 @@ p {
   color: hsl(0, 94%, 66%);
 }
 
+.hero p {
+  max-width: 500px;
+}
+
+.features--intro p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pricing--intro p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: hsl(229, 31%, 21%);
+}
+
 /*# sourceMappingURL=style.css.map */

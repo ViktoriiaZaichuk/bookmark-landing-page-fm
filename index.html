@@ -6,8 +6,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
     <title>Frontend Mentor | Bookmark landing page</title>
     <link rel="stylesheet" href="./src/styles/dist/style.css">
-
-    
 </head>
 <body>
     <header class="">
@@ -31,7 +29,7 @@
         </nav>
     </header>
     <main class="container-xl">
-        <section id="hero" class="mt-5 d-flex flex-sm-row flex-column-reverse justify-content-between align-items-center">
+        <section id="hero" class="hero mt-5 mb-5 d-flex flex-sm-row flex-column-reverse justify-content-between align-items-center">
             <div class="">
                 <h1 class="mb-4">A Simple Bookmark Manager</h1>
                 <p class="mb-4">A clean and simple interface to organize your favourite websites. Open a new 
@@ -45,34 +43,198 @@
                 <img class="block w-100" src="src/images/illustration-hero.svg" alt="Bookmark">
             </div>
         </section>
-        <section id="features" class="">
-            <div>
-                <h2 class="text-center">Features</h2>
+        <section id="features" class="features mb-5">
+            <div class="features--intro mb-5">
+                <h2 class="text-center mb-4">Features</h2>
                 <p class="text-center">Our aim is to make it quick and easy for you to access your favourite websites. 
-                    Your bookmarks sync between your devices so you can access them on the go.</p>
+                    Your bookmarks sync between your devices so you can access them on the go.
+                </p>
             </div>
-            <div>
-
+            <div class="features--tabs">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="simple-bookmarking-tab" data-bs-toggle="tab" data-bs-target="#simple-bookmarking" type="button" role="tab" aria-controls="simple-bookmarking" aria-selected="true">Simple Bookmarking</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#speedy-searching" type="button" role="tab" aria-controls="speedy-searching" aria-selected="false">Speedy Searching</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#easy-sharing" type="button" role="tab" aria-controls="easy-sharing" aria-selected="false">Easy Sharing</button>
+                    </li>
+                </ul>
+            
+                <div class="tab-content mt-3">
+                    <div class="tab-pane fade show active" id="simple-bookmarking" role="tabpanel" aria-labelledby="simple-bookmarking-tab">
+                        <h3>Bookmark in one click</h3>
+                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                            gives you complete control over how you manage your favourite sites.
+                        </p>
+                        <button>More Info</button>
+                    </div>
+                    <div class="tab-pane fade" id="speedy-searching" role="tabpanel" aria-labelledby="speedy-searching-tab">
+                        <h3>Intelligent search</h3>
+                        <p>Our powerful search feature will help you find saved sites in no time at all. 
+                            No need to trawl through all of your bookmarks.
+                        </p>
+                        <button>More Info</button>
+                    </div>
+                    <div class="tab-pane fade" id="easy-sharing" role="tabpanel" aria-labelledby="easy-sharing-tab">
+                        <h3>Share your bookmarks</h3>
+                        <p>Easily share your bookmarks and collections with others. Create a shareable 
+                            link that you can send at the click of a button.
+                        </p>
+                        <button>More Info</button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="pricing">
-            <div>
-                <h2></h2>
-                <p></p>
+        <section id="pricing" class="pricing mb-5">
+            <div class="pricing--intro mb-5">
+                <h2 class="text-center">Download the extension</h2>
+                <p class="text-center">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                    got a favourite you’d like us to prioritize.
+                </p>
             </div>
-            <div>
-
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="d-block" src="src/images/logo-chrome.svg" alt="Chrome">
+                        <h3 class="text-center">Add to Chrome</h3>
+                        <span class="text-center">Minimum version 62</span>
+                        <img class="d-block mt-5 mb-4" src="src/images/bg-dots.svg" alt="Dots">
+                        <button class="">Add & Install Extension</button>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-sm-5">
+                    <div class="card">
+                        <img class="d-block" src="src/images/logo-chrome.svg" alt="Chrome">
+                        <h3 class="text-center">Add to Chrome</h3>
+                        <span class="text-center">Minimum version 62</span>
+                        <img class="d-block mt-5 mb-4" src="src/images/bg-dots.svg" alt="Dots">
+                        <button class="">Add & Install Extension</button>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-sm-5">
+                    <div class="card">
+                        <img class="d-block" src="src/images/logo-chrome.svg" alt="Chrome">
+                        <h3 class="text-center">Add to Chrome</h3>
+                        <span class="text-center">Minimum version 62</span>
+                        <img class="d-block mt-5 mb-4" src="src/images/bg-dots.svg" alt="Dots">
+                        <button class="m-5">Add & Install Extension</button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="faq" class="">
-
+        <section id="faq" class="faq">
+            <div class="mb-5">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <p class="text-center">Here are some of our FAQs. If you have any other questions you’d like 
+                    answered please feel free to email us.
+                </p>
+            </div>
+            <div id="accordion-faq" class="accordion mb-5">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is Bookmark?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                        <div class="accordion-body">
+                            <p>Bookmark is a simple and easy way to manage your favourite websites. 
+                                Our modern interface allows you to quickly locate your bookmarked sites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            How can I request a new browser?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                        <div class="accordion-body">
+                            <p>Bookmark is a simple and easy way to manage your favourite websites. 
+                                Our modern interface allows you to quickly locate your bookmarked sites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Is there a mobile app?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                        <div class="accordion-body">
+                            <p>Bookmark is a simple and easy way to manage your favourite websites. 
+                                Our modern interface allows you to quickly locate your bookmarked sites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            What about other Chromium browsers?
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                        <div class="accordion-body">
+                            <p>Bookmark is a simple and easy way to manage your favourite websites. 
+                                Our modern interface allows you to quickly locate your bookmarked sites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button>More info</button>
+            </div>
         </section>
-        <section id="contact">
-
+        <section id="contact" class="contact py-5">
+            <span>35,000+ already joined</span>
+            <h2>Stay up-to-date with what we’re doing</h1>
+            <form class="needs-validation d-flex flex-sm-row flex-column-reverse" novalidate>
+                <div class="mb-3">
+                    <input type="email" class="form-control d-block" id="InputEmail" aria-describedby="email" required>
+                    <div class="invalid-feedback">
+                        Whoops, make sure it's an email.
+                    </div>
+                </div>
+                <div>
+                    <button class="block" type="submit">Contact Us</button>
+                </div>
+            </form>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer py-5">
+        <div class="container-xl d-flex flex-sm-row flex-column align-items-center justify-content-between">
+            <div class="d-flex flex-sm-row flex-column">
+                <a href="#" class="logo"> 
+                    <img src="src/images/logo-bookmark.svg" alt="Logo Bookmark">  
+                </a>
+                <ul class="d-flex flex-sm-row flex-column navbar-nav ms-auto">
+                    <li class="nav-item me-lg-5"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item me-lg-5"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item me-lg-5"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="me-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                        <path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                        <path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
